@@ -9,4 +9,4 @@ This semi-automatic algorithm can study models with initial conditions (parametr
 Lie_Symmetry requires a MATLAB installation with the Symbolic toolbox. It is only necessary to download the folder that includes two folders and one main programme:
  - FUNCTIONS. This folder includes all the necessary functions to run the programme.
  - MODELS. This folder includes some models. The user can create more models by following the examples already included and saving the corresponding file in the same folder.
- - Lie-Symmetry. This file is the main programme. The user can choose the degree of the infinitesimal polynomial, its type (univariate, partially variate or multivariate) and the maximum degree of Lie series (when the reparametrization need it). 
+ - Lie-Symmetry. This file is the main programme where the user can choose the options of the symmetry study.
