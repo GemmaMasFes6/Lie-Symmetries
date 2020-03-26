@@ -34,7 +34,8 @@ function [A] = pol_sta_2(allVar,den_f,diffini,diff_den_f,diff_num_f,...
          
          %  Sistema
         eq_c1=collect(eq_a,allVar);
-        eq_ch1=children(eq_c1);
+        [eq_c_num,~]=numden(eq_c1);
+        eq_ch1=children(eq_c_num);
         l_eq_ch1=length(eq_ch1);
         eq_n1=[];
         for l=1:l_eq_ch1  
