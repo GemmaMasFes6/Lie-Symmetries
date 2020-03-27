@@ -33,8 +33,8 @@ function [A] = pol_sta_2(allVar,den_f,diffini,diff_den_f,diff_num_f,...
          eq_a=nm-nv;
          
          %  Sistema
-        eq_c1=collect(eq_a,allVar);
-        [eq_c_num,~]=numden(eq_c1);
+        [eq_c_num,~]=numden(eq_a);
+        eq_c_num=collect(eq_c_num,allVar);
         eq_ch1=children(eq_c_num);
         l_eq_ch1=length(eq_ch1);
         eq_n1=[];
