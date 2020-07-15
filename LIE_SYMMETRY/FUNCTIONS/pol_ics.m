@@ -52,5 +52,8 @@ function [A] = pol_ics(allVar,den_ics,diff_den_ics,diff_num_ics,ics_n,...
             end
         end
     end
+    if exist('A')==0
+        A=[];
+    end
 end
 
